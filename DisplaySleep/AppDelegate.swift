@@ -23,10 +23,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         let menu = NSMenu()
 //        menu.addItem(NSMenuItem(title: "Print Quote", action: Selector("printQuote:"), keyEquivalent: "P"))
-        menu.addItem(NSMenuItem(title: "Sleep", action: Selector("putDisplayToSleep:"), keyEquivalent: "S"))
+        menu.addItem(NSMenuItem(title: "Sleep", action: Selector("putDisplayToSleep:"), keyEquivalent: "s"))
+        menu.addItem(NSMenuItem(title: "Preference", action: Selector("showPreferenceWindow:"), keyEquivalent: ","))
         menu.addItem(NSMenuItem.separatorItem())
         menu.addItem(NSMenuItem(title: "Quit", action: Selector("terminate:"), keyEquivalent: "q"))
         statusItem.menu = menu
+        // register defaults
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let myDefaults = [ "launchAtStartup":0 ]
+        defaults.registerDefaults(myDefaults)
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
@@ -45,6 +50,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         task.launchPath = "/usr/bin/pmset"
         task.arguments = ["displaysleepnow"]
         task.launch()
+    }
+    
+    let preferenceController = Preference(windowNibName: "Preference")
+    func showPreferenceWindow(sender: AnyObject) {
+        preferenceController.showWindow(sender)
     }
     
 }

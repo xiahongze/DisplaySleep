@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C572E9421B9DA4A000B4398E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572E9401B9DA4A000B4398E /* SettingViewController.swift */; };
+		C572E9431B9DA4A000B4398E /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C572E9411B9DA4A000B4398E /* SettingViewController.xib */; };
+		C572E9461B9DA51200B4398E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572E9441B9DA51200B4398E /* AboutViewController.swift */; };
+		C572E9471B9DA51200B4398E /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C572E9451B9DA51200B4398E /* AboutViewController.xib */; };
+		C572E9491B9E661700B4398E /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C572E9481B9E661700B4398E /* ServiceManagement.framework */; };
 		C5C941351B9D3AA200E70A5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C941341B9D3AA200E70A5E /* AppDelegate.swift */; };
 		C5C941371B9D3AA200E70A5E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5C941361B9D3AA200E70A5E /* Images.xcassets */; };
 		C5C9413A1B9D3AA200E70A5E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5C941381B9D3AA200E70A5E /* MainMenu.xib */; };
 		C5C941461B9D3AA200E70A5E /* DisplaySleepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C941451B9D3AA200E70A5E /* DisplaySleepTests.swift */; };
+		C5C941511B9D797600E70A5E /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C9414F1B9D797600E70A5E /* Preference.swift */; };
+		C5C941521B9D797600E70A5E /* Preference.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5C941501B9D797600E70A5E /* Preference.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C572E9401B9DA4A000B4398E /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		C572E9411B9DA4A000B4398E /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		C572E9441B9DA51200B4398E /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		C572E9451B9DA51200B4398E /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		C572E9481B9E661700B4398E /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		C5C9412F1B9D3AA200E70A5E /* DisplaySleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisplaySleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C941331B9D3AA200E70A5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5C941341B9D3AA200E70A5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +44,8 @@
 		C5C9413F1B9D3AA200E70A5E /* DisplaySleepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisplaySleepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C941441B9D3AA200E70A5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5C941451B9D3AA200E70A5E /* DisplaySleepTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySleepTests.swift; sourceTree = "<group>"; };
+		C5C9414F1B9D797600E70A5E /* Preference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
+		C5C941501B9D797600E70A5E /* Preference.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preference.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C572E9491B9E661700B4398E /* ServiceManagement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +70,7 @@
 		C5C941261B9D3AA200E70A5E = {
 			isa = PBXGroup;
 			children = (
+				C572E9481B9E661700B4398E /* ServiceManagement.framework */,
 				C5C941311B9D3AA200E70A5E /* DisplaySleep */,
 				C5C941421B9D3AA200E70A5E /* DisplaySleepTests */,
 				C5C941301B9D3AA200E70A5E /* Products */,
@@ -77,6 +93,12 @@
 				C5C941361B9D3AA200E70A5E /* Images.xcassets */,
 				C5C941381B9D3AA200E70A5E /* MainMenu.xib */,
 				C5C941321B9D3AA200E70A5E /* Supporting Files */,
+				C5C9414F1B9D797600E70A5E /* Preference.swift */,
+				C5C941501B9D797600E70A5E /* Preference.xib */,
+				C572E9401B9DA4A000B4398E /* SettingViewController.swift */,
+				C572E9411B9DA4A000B4398E /* SettingViewController.xib */,
+				C572E9441B9DA51200B4398E /* AboutViewController.swift */,
+				C572E9451B9DA51200B4398E /* AboutViewController.xib */,
 			);
 			path = DisplaySleep;
 			sourceTree = "<group>";
@@ -187,7 +209,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5C941371B9D3AA200E70A5E /* Images.xcassets in Resources */,
+				C5C941521B9D797600E70A5E /* Preference.xib in Resources */,
 				C5C9413A1B9D3AA200E70A5E /* MainMenu.xib in Resources */,
+				C572E9431B9DA4A000B4398E /* SettingViewController.xib in Resources */,
+				C572E9471B9DA51200B4398E /* AboutViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +230,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5C941511B9D797600E70A5E /* Preference.swift in Sources */,
 				C5C941351B9D3AA200E70A5E /* AppDelegate.swift in Sources */,
+				C572E9461B9DA51200B4398E /* AboutViewController.swift in Sources */,
+				C572E9421B9DA4A000B4398E /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +424,7 @@
 				C5C9414B1B9D3AA200E70A5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5C9414C1B9D3AA200E70A5E /* Build configuration list for PBXNativeTarget "DisplaySleepTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +433,7 @@
 				C5C9414E1B9D3AA200E70A5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

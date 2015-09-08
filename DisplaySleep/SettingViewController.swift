@@ -18,14 +18,8 @@ func isAppInLoginItems () -> Int {
             "else\n" +
             "return 1\nend if\nend tell"
     let result = runAppleScript(cmd)
-    var j = 0
-    for char in result.description as String {
-        if let i = "\(char)".toInt() {
-//            println(i)
-            j = i
-        }
-    }
-    return j
+    var j = result.stringValue?.toInt()
+    return j!
 }
 
 func runAppleScript (cmd: String) -> NSAppleEventDescriptor {

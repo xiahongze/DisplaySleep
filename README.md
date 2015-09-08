@@ -1,6 +1,6 @@
 # DisplaySleep
 
-This is a menubar utility that puts the display to sleep with simple clicks.
+This is a menubar utility that puts your display to sleep with simple clicks.
 
 The setup works on OS X 10.10. I have not tested it on other OS X versions.
 

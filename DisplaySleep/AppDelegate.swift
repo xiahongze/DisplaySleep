@@ -50,7 +50,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     let preferenceController = Preference(windowNibName: "Preference")
     func showPreferenceWindow(sender: AnyObject) {
-        preferenceController.showWindow(sender)
+        // This is one of the rare occasions where it's correct to pass YES to that method.
+        NSApp.activateIgnoringOtherApps(true)
+        preferenceController.showWindow(self)
+        preferenceController.window?.makeKeyAndOrderFront(self)
     }
     
 }

@@ -28,10 +28,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         menu.addItem(NSMenuItem.separatorItem())
         menu.addItem(NSMenuItem(title: "Quit", action: Selector("terminate:"), keyEquivalent: "q"))
         statusItem.menu = menu
-        // register defaults
-        let defaults = NSUserDefaults.standardUserDefaults()
-        let myDefaults = [ "launchAtStartup":0 ]
-        defaults.registerDefaults(myDefaults)
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {

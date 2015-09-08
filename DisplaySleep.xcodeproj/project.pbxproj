@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C56AF32F1B9EC9CF00652EA3 /* menubarApp.png in Resources */ = {isa = PBXBuildFile; fileRef = C56AF32E1B9EC9CF00652EA3 /* menubarApp.png */; };
 		C572E9421B9DA4A000B4398E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572E9401B9DA4A000B4398E /* SettingViewController.swift */; };
 		C572E9431B9DA4A000B4398E /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C572E9411B9DA4A000B4398E /* SettingViewController.xib */; };
 		C572E9461B9DA51200B4398E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572E9441B9DA51200B4398E /* AboutViewController.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C56AF32E1B9EC9CF00652EA3 /* menubarApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menubarApp.png; path = ../../../menubarApp.png; sourceTree = "<group>"; };
 		C572E9401B9DA4A000B4398E /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		C572E9411B9DA4A000B4398E /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		C572E9441B9DA51200B4398E /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		C5C941311B9D3AA200E70A5E /* DisplaySleep */ = {
 			isa = PBXGroup;
 			children = (
+				C56AF32E1B9EC9CF00652EA3 /* menubarApp.png */,
 				C5C941341B9D3AA200E70A5E /* AppDelegate.swift */,
 				C5C941361B9D3AA200E70A5E /* Images.xcassets */,
 				C5C941381B9D3AA200E70A5E /* MainMenu.xib */,
@@ -206,6 +209,7 @@
 			files = (
 				C5C941371B9D3AA200E70A5E /* Images.xcassets in Resources */,
 				C5C941521B9D797600E70A5E /* Preference.xib in Resources */,
+				C56AF32F1B9EC9CF00652EA3 /* menubarApp.png in Resources */,
 				C5C9413A1B9D3AA200E70A5E /* MainMenu.xib in Resources */,
 				C572E9431B9DA4A000B4398E /* SettingViewController.xib in Resources */,
 				C572E9471B9DA51200B4398E /* AboutViewController.xib in Resources */,

@@ -9,7 +9,7 @@ The icons are from [this link](https://www.iconfinder.com/search/?q=monitor). He
 Here are two screenshots for the application.
 
 ![Screenshot](menubarApp.png)
-![PreferenceWindow](preferenceWindow.png)
+![PreferenceWindow](preferenceWindow.png =256x)
 
 Here is the icon for this application.
 
